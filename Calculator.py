@@ -15,24 +15,24 @@ def Conditions(Condition,Number1,Number2):
         print("การหาร")
         Result = Number1 / Number2
     else:
-        print("โปรดเลือกอีกครั้ง เนื่องจากไม่สามารถระบุตัวแปรได้")
+        print("Please do it again ,We cannot Define what do you want?")
         Result = "Cannot Detect"
-    Text = f"ผลลัพท์ของคุณคือ : {Result}"
+    Text = f"Your Result is  : {Result}"
     Value = False
     print(Text)
     return Result
 BoolValue = True
 while BoolValue == True:
-    Condition = str(input("ต้องการใช้คำสั่งใด การบวก = 1 การลบ = 2 การคูณ = 3 การหาร = 4 :"))
-    Number1 = float(input("หมายเลขที่ 1 :"))
-    Number2 = float(input("หมายเลขที่ 2 :"))
+    Condition = str(input("What do you want to do? \nplus = 1 negative = 2 mutiple = 3 divide = 4 :"))
+    Number1 = float(input("Number 1 :"))
+    Number2 = float(input("Number 2 :"))
     Conditions(Condition,Number1,Number2)
-    Loop = str(input("คุณต้องการใช้เครื่องคิดเลขอีกหรือไม่ 1 = ต้องการ 2 = ไม่ต้องการ : "))
+    Loop = str(input("Do you want to use again? 1 = Yes 2 = No : "))
     if Loop == "1":
-        print("การเลือกของคุณคือ : ต้องการทำซ้ำ")
+        print("You choosed : Yes i do ")
         BoolValue = True
     else:
-        print("การเลือกของคุณคือ : ไม่ต้องการทำซ้ำ")
+        print("You choosed : No i do")
         BoolValue = False
         User = T.UserName()
 print("-------------------------------------------------------------------")
