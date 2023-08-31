@@ -113,6 +113,16 @@ class App:
         GButton_829.place(x=300,y=150,width=100,height=100)
         GButton_829["command"] = self.GButton_9_command
 
+        GButton_180=tk.Button(root)
+        GButton_180["bg"] = "#f0f0f0"
+        ft = tkFont.Font(family='Times',size=10)
+        GButton_180["font"] = ft
+        GButton_180["fg"] = "#000000"
+        GButton_180["justify"] = "center"
+        GButton_180["text"] = "0"
+        GButton_180.place(x=200,y=450,width=100,height=50)
+        GButton_180["command"] = self.GButton_15_command
+
         GLabel_280=tk.Label(root)
         ft = tkFont.Font(family='Times',size=38)
         GLabel_280["font"] = ft
@@ -172,40 +182,40 @@ class App:
         GButton_180["command"] = self.GButton_14_command
 
     def GButton_1_command(self):
-        print("command")
-
+        self.Number = 1
+        return self.Number
 
     def GButton_2_command(self):
-        print("command")
-
+        self.Number = 2
+        return self.Number
 
     def GButton_3_command(self):
-        print("command")
-
+        self.Number = 3
+        return self.Number
 
     def GButton_4_command(self):
-        print("command")
-
+        self.Number = 4
+        return self.Number1
 
     def GButton_5_command(self):
-        print("command")
-
+        self.Number = 5
+        return self.Number
 
     def GButton_6_command(self):
-        print("command")
-
+        self.Number = 6
+        return self.Number 
 
     def GButton_7_command(self):
-        print("command")
-
+        self.Number = 7
+        return self.Number 
 
     def GButton_8_command(self):
-        print("command")
-
+        self.Number = 8
+        return self.Number
 
     def GButton_9_command(self):
-        print("command")
-
+        self.Number = 9
+        return self.Number
 
     def GButton_10_command(self):
         print("command")
@@ -225,10 +235,14 @@ class App:
 
     def GButton_14_command(self):
         print("command")
+    
+    def GButton_15_command(self):
+        print("command")
 
 if __name__ == "__main__":
     root = tk.Tk()
     app = App(root)
     root.mainloop()
+
 
     
