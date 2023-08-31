@@ -195,7 +195,7 @@ class App:
 
     def GButton_4_command(self):
         self.Number = 4
-        return self.Number1
+        return self.Number
 
     def GButton_5_command(self):
         self.Number = 5
