@@ -1,4 +1,5 @@
 import Test as T
+import numpy as np
 Name = T.FnameAndLname()
 print(f"Welcome to MY ProJect Calculator ")
 def Conditions(Condition,Number1,Number2):
